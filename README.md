@@ -33,3 +33,6 @@ To go to the next level, the player has to press the joystick button for a longe
 
 ### Picture of the setup
 ![Matrix Game Setup](https://user-images.githubusercontent.com/34553466/208913165-209e8d35-c3d2-4d73-91a4-3affd80c224a.jpg)
+
+### Link for the showcase video
+https://youtu.be/uh-B4gID_-s
