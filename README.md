@@ -26,5 +26,10 @@ To go to the next level, the player has to press the joystick button for a longe
 - wires
 - resistors
 
+### Bugs
+- When the menu is first opened and the user scrolls down it jumps to the third menu option, not the second as it should
+- When the users opens the settings menu, the first option is immediately opened (it should only open the settings menu)
+- Sometimes the matrix and the lcd do not show what they should (probably because of system noise)
+
 ### Picture of the setup
 ![Matrix Game Setup](https://user-images.githubusercontent.com/34553466/208913165-209e8d35-c3d2-4d73-91a4-3affd80c224a.jpg)
