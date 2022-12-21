@@ -6,7 +6,7 @@ const byte unconnectedPin = A3; // used for the random seed
 const byte RS = 9;
 const byte enable = 8;
 const byte d4 = 7;
-const byte d5 = 13;
+const byte d5 = 2;
 const byte d6 = 5;
 const byte d7 = 4;
 const byte lcdContrastPin = 3;
@@ -462,6 +462,9 @@ void settings() {
 }
 
 void lcdBrightness() {  
+  lcd.createChar(3, menuArrows[rightArrow]);
+  lcd.createChar(4, menuArrows[leftArrow]);
+  
   lcd.clear();
   lcd.setCursor(1, 0);
   lcd.print("LCD Brightness");
@@ -477,6 +480,9 @@ void lcdBrightness() {
 }
 
 void matrixBrightness() {
+  lcd.createChar(3, menuArrows[rightArrow]);
+  lcd.createChar(4, menuArrows[leftArrow]);
+  
   fullMatrix();
   lcd.clear();
   lcd.setCursor(1, 0);

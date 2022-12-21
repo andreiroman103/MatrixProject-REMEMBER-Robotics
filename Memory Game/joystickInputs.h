@@ -5,7 +5,7 @@
 // Joystick
 const int joystickXPin = A0;
 const int joystickYPin = A1;
-const int joystickSWPin = 2;
+const int joystickSWPin = 13;
 
 const int minThreshold = 200;
 const int maxThreshold = 600;
