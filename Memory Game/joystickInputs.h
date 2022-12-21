@@ -1,6 +1,6 @@
 #include "EEPROM.h"
 #include "Stream.h"
-#include "HardwareSerial.h"
+// #include "HardwareSerial.h"
 #include "Arduino.h"
 // Joystick
 const int joystickXPin = A0;
@@ -55,8 +55,8 @@ void joystickInput() {
         if (nrMistakes < 1) {
           score += 20;
         }
-        else if (nrMistakes < 3) {
-          score += 5;
+        else if (nrMistakes <= 3) {
+          score += 10;
         }
         level++;
         nrClicks = 0;
@@ -171,7 +171,6 @@ void joystickInput() {
     }
     else if (systemState == 1) {
       if (currentSettingsPosition > firstSettingsPosition) {
-        Serial.println("up in settings");
         canChangeLevel = false;
         settingsMatrixAnimation();
         currentSettingsPosition--;
@@ -200,7 +199,6 @@ void joystickInput() {
       if (currentSettingsPosition < lastSettingsPosition) {
         canChangeLevel = false;
         settingsMatrixAnimation();
-        Serial.println("down in settings");
         currentSettingsPosition++;
         settings();
       }

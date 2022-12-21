@@ -8,7 +8,6 @@ byte lcdContrast = 130;
 
 
 void setup() {
-  Serial.begin(9600);
   lc.shutdown(0, false); // turn off power saving, enables display
   lc.clearDisplay(0);// clear screen
   pinMode(RS, OUTPUT);
